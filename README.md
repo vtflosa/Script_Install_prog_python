@@ -8,6 +8,8 @@
 
 Reusable installation script for any Python program with or without Tkinter interface.
 
+Download the file [install_mypythonapp.sh](https://raw.githubusercontent.com/vtflosa/Script_Install_prog_python/main/install_mypythonapp.sh) (right-click -> save link as...)
+
 ### Quick Configuration
 
 Edit only the **CONFIGURATION** section at the top of the script (lines 5-30):
@@ -121,6 +123,8 @@ bash ~/.local/share/mypythonapp/uninstall.sh
 # 🇫🇷 Français
 
 Script d'installation réutilisable pour n'importe quel programme Python avec ou sans interface Tkinter.
+
+Télécharger le fichier [install_mypythonapp.sh](https://raw.githubusercontent.com/vtflosa/Script_Install_prog_python/main/install_mypythonapp.sh) (clique-droit -> enregistre la cible du lien sous...)
 
 ### Configuration rapide
 
