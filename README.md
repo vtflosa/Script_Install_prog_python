@@ -99,6 +99,7 @@ bash install_mypythonapp.sh
 ### Uninstall
 
 ```bash
+# Open console copy and execute: 
 bash ~/.local/share/mypythonapp/uninstall.sh
 ```
 
@@ -212,6 +213,7 @@ bash install_mypythonapp.sh
 ### Désinstallation
 
 ```bash
+# Ouvrir une console, copier et exécuter :
 bash ~/.local/share/mypythonapp/uninstall.sh
 ```
 
