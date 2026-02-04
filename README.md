@@ -2,11 +2,15 @@
 
 **[🇬🇧 English](#-english)** | **[🇫🇷 Français](#-français)**
 
+**Platforms:** [🐧 Linux](#-linux) | [🪟 Windows](#-windows)
+
 ---
 
 # 🇬🇧 English
 
 Reusable installation script for any Python program with or without Tkinter interface.
+
+## 🐧 Linux
 
 Download the file [install_mypythonapp.sh](https://raw.githubusercontent.com/vtflosa/Script_Install_prog_python/main/install_mypythonapp.sh) (right-click -> save link as...)
 
@@ -118,11 +122,84 @@ bash ~/.local/share/mypythonapp/uninstall.sh
 ✅ Arch Linux / Manjaro
 
 ---
+
+## 🪟 Windows
+
+Download the file [install_mypythonapp.bat](https://raw.githubusercontent.com/vtflosa/Script_Install_prog_python/main/install_mypythonapp.bat) (right-click -> save link as...)
+
+### Quick Configuration
+
+Edit only the **CONFIGURATION** section at the top of the script (lines 5-20):
+
+```batch
+REM Application information
+set "APP_NAME=MyPythonApp"
+set "APP_DESCRIPTION=Short description of your app"
+set "APP_COMMENT=Comment for the launcher"
+
+REM GitHub repository URL
+set "GITHUB_REPO_URL=https://raw.githubusercontent.com/USER/REPO/main"
+
+REM Files to download (space-separated)
+set "DOWNLOAD_FILES=main.py requirements.txt icon.png"
+
+REM Main Python file
+set "MAIN_PYTHON_FILE=main.py"
+
+REM Icon file (.ico for Windows)
+set "ICON_FILE=icon.ico"
+
+REM Python dependencies
+set "NEEDS_TKINTER=true"
+```
+
+### Automatic Actions
+
+1. Check Python 3 and pip
+2. Check Tkinter (if needed)
+3. Download files from GitHub
+4. Create Python virtual environment
+5. Install Python dependencies
+6. Create launcher script
+7. Create desktop shortcut
+8. Create Start Menu shortcut
+9. Generate uninstall script
+
+### Usage
+
+```batch
+REM Double-click on install_mypythonapp.bat
+REM Or run from Command Prompt:
+install_mypythonapp.bat
+```
+
+### Installation Location
+
+- **Folder**: `%LOCALAPPDATA%\MyPythonApp`
+- **Desktop shortcut**: Created automatically
+- **Start Menu**: Created automatically
+
+### Uninstall
+
+```batch
+REM Open Command Prompt, copy and execute:
+%LOCALAPPDATA%\mypythonapp\uninstall.bat
+```
+
+### Requirements
+
+- Windows 10/11
+- Python 3.6+ (with "Add to PATH" option enabled)
+- Internet connection
+
+---
 ---
 
 # 🇫🇷 Français
 
 Script d'installation réutilisable pour n'importe quel programme Python avec ou sans interface Tkinter.
+
+## 🐧 Linux
 
 Télécharger le fichier [install_mypythonapp.sh](https://raw.githubusercontent.com/vtflosa/Script_Install_prog_python/main/install_mypythonapp.sh) (clique-droit -> enregistre la cible du lien sous...)
 
@@ -232,3 +309,74 @@ bash ~/.local/share/mypythonapp/uninstall.sh
 ✅ Ubuntu / Debian / Linux Mint  
 ✅ Fedora / RHEL / CentOS  
 ✅ Arch Linux / Manjaro
+
+---
+
+## 🪟 Windows
+
+Télécharger le fichier [install_mypythonapp.bat](https://raw.githubusercontent.com/vtflosa/Script_Install_prog_python/main/install_mypythonapp.bat) (clique-droit -> enregistre la cible du lien sous...)
+
+### Configuration rapide
+
+Modifiez uniquement la section **CONFIGURATION** en haut du script (lignes 5-20) :
+
+```batch
+REM Informations de l'application
+set "APP_NAME=MyPythonApp"
+set "APP_DESCRIPTION=Description courte de votre app"
+set "APP_COMMENT=Commentaire pour le lanceur"
+
+REM URL du dépôt GitHub
+set "GITHUB_REPO_URL=https://raw.githubusercontent.com/USER/REPO/main"
+
+REM Fichiers à télécharger (séparés par des espaces)
+set "DOWNLOAD_FILES=main.py requirements.txt icon.png"
+
+REM Fichier Python principal
+set "MAIN_PYTHON_FILE=main.py"
+
+REM Fichier icône (.ico pour Windows)
+set "ICON_FILE=icon.ico"
+
+REM Dépendances Python
+set "NEEDS_TKINTER=true"
+```
+
+### Actions automatiques
+
+1. Vérifie Python 3 et pip
+2. Vérifie Tkinter (si nécessaire)
+3. Télécharge les fichiers depuis GitHub
+4. Crée un environnement virtuel Python
+5. Installe les dépendances Python
+6. Crée le script de lancement
+7. Crée un raccourci bureau
+8. Crée un raccourci Menu Démarrer
+9. Génère un script de désinstallation
+
+### Utilisation
+
+```batch
+REM Double-cliquez sur install_mypythonapp.bat
+REM Ou exécutez depuis l'invite de commandes :
+install_mypythonapp.bat
+```
+
+### Emplacement d'installation
+
+- **Dossier** : `%LOCALAPPDATA%\MyPythonApp`
+- **Raccourci bureau** : Créé automatiquement
+- **Menu Démarrer** : Créé automatiquement
+
+### Désinstallation
+
+```batch
+REM Ouvrir l'invite de commandes, copier et exécuter :
+%LOCALAPPDATA%\mypythonapp\uninstall.bat
+```
+
+### Prérequis
+
+- Windows 10/11
+- Python 3.6+ (avec l'option "Add to PATH" activée)
+- Connexion Internet
