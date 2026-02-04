@@ -140,7 +140,7 @@ REM GitHub repository URL
 set "GITHUB_REPO_URL=https://raw.githubusercontent.com/USER/REPO/main"
 
 REM Files to download (space-separated)
-set "DOWNLOAD_FILES=main.py requirements.txt icon.png"
+set "DOWNLOAD_FILES=main.py requirements.txt icon.png icon.ico"
 
 REM Main Python file
 set "MAIN_PYTHON_FILE=main.py"
@@ -150,6 +150,35 @@ set "ICON_FILE=icon.ico"
 
 REM Python dependencies
 set "NEEDS_TKINTER=true"
+```
+
+### ⚠️ Important Windows-Specific Requirements
+
+**Before using this script, make sure:**
+
+1. **Icon file format**: Use `.ico` format for `ICON_FILE` (not `.png`)
+   - Convert your icon: https://image.online-convert.com/convert/png-to-ico
+   - Recommended size: 256x256 pixels
+
+2. **No special characters**: Avoid accents and special characters in:
+   - `APP_NAME` (use only: `A-Z`, `a-z`, `0-9`, `-`, `_`)
+   - `APP_DESCRIPTION` and `APP_COMMENT` (use only ASCII characters)
+   - File names in `DOWNLOAD_FILES`
+
+3. **Use English**: All configuration values should be in English
+   - ✅ Good: `APP_NAME="MyPythonApp"`
+   - ❌ Bad: `APP_NAME="MonAppliçation"`
+
+4. **File encoding**: Save your Python files with UTF-8 encoding (without BOM)
+
+5. **Line endings**: Use Windows line endings (CRLF) for `.bat` files
+
+**Example of correct configuration:**
+```batch
+set "APP_NAME=QRCodeReader"
+set "APP_DESCRIPTION=Screen QR code decoder"
+set "APP_COMMENT=Detect and decode QR codes"
+set "ICON_FILE=app_icon.ico"
 ```
 
 ### Automatic Actions
@@ -329,7 +358,7 @@ REM URL du dépôt GitHub
 set "GITHUB_REPO_URL=https://raw.githubusercontent.com/USER/REPO/main"
 
 REM Fichiers à télécharger (séparés par des espaces)
-set "DOWNLOAD_FILES=main.py requirements.txt icon.png"
+set "DOWNLOAD_FILES=main.py requirements.txt icon.png icon.ico"
 
 REM Fichier Python principal
 set "MAIN_PYTHON_FILE=main.py"
@@ -339,6 +368,35 @@ set "ICON_FILE=icon.ico"
 
 REM Dépendances Python
 set "NEEDS_TKINTER=true"
+```
+
+### ⚠️ Précautions importantes spécifiques à Windows
+
+**Avant d'utiliser ce script, assurez-vous que :**
+
+1. **Format d'icône** : Utilisez le format `.ico` pour `ICON_FILE` (pas `.png`)
+   - Convertissez votre icône : https://image.online-convert.com/fr/convertir/png-en-ico
+   - Taille recommandée : 256x256 pixels
+
+2. **Pas de caractères spéciaux** : Évitez les accents et caractères spéciaux dans :
+   - `APP_NAME` (utilisez uniquement : `A-Z`, `a-z`, `0-9`, `-`, `_`)
+   - `APP_DESCRIPTION` et `APP_COMMENT` (uniquement caractères ASCII)
+   - Noms de fichiers dans `DOWNLOAD_FILES`
+
+3. **Utilisez l'anglais** : Toutes les valeurs de configuration doivent être en anglais
+   - ✅ Bon : `APP_NAME="MyPythonApp"`
+   - ❌ Mauvais : `APP_NAME="MonAppliçation"`
+
+4. **Encodage des fichiers** : Sauvegardez vos fichiers Python en UTF-8 (sans BOM)
+
+5. **Fins de ligne** : Utilisez les fins de ligne Windows (CRLF) pour les fichiers `.bat`
+
+**Exemple de configuration correcte :**
+```batch
+set "APP_NAME=QRCodeReader"
+set "APP_DESCRIPTION=Screen QR code decoder"
+set "APP_COMMENT=Detect and decode QR codes"
+set "ICON_FILE=app_icon.ico"
 ```
 
 ### Actions automatiques
