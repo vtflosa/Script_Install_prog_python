@@ -1,8 +1,7 @@
 # Generic Installation Script for Python Programs
 
-**[🇬🇧 English](#-english)** | **[🇫🇷 Français](#-français)**
-
-**Platforms:** [🐧 Linux](#-linux) | [🪟 Windows](#-windows)
+**🇬🇧 English:** [🐧 Linux](#-linux) | [🪟 Windows](#-windows)  
+**🇫🇷 Français:** [🐧 Linux](#-linux-1) | [🪟 Windows](#-windows-1)
 
 ---
 
